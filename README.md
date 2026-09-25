@@ -1,4 +1,4 @@
-# Electricity Load Forecasting — Tetouan City Power Consumption
+# Electricity Load Forecasting - City Power Consumption
 
 Predicting short-term electricity demand from weather and time-based features using classic regression (no deep learning).
 
@@ -8,7 +8,7 @@ Utilities need to forecast electricity demand to plan generation and distributio
 
 ## Dataset
 
-**Power Consumption of Tetouan City** — 52,416 real 10-minute readings from 3 power distribution zones in Tetouan, Morocco, along with weather variables (temperature, humidity, wind speed, solar flux).
+**Power Consumption of Tetouan City** - 52,416 real 10-minute interval readings from 3 power distribution zones in Tetouan, Morocco. Along with weather variables (temperature, humidity, wind speed, solar flux).
 
 - Source: [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/849/power+consumption+of+tetouan+city)
 - Also available on [Kaggle](https://www.kaggle.com/datasets/fedesoriano/electric-power-consumption)
@@ -16,7 +16,7 @@ Utilities need to forecast electricity demand to plan generation and distributio
 ## Approach
 
 1. Load and parse timestamps
-2. Feature engineering — sum the 3 zones into total demand, extract hour / day-of-week / month / weekend flag from timestamp
+2. Feature engineering - sum the 3 zones into total demand, extract hour / day-of-week / month / weekend flag from timestamp
 3. Chronological train/test split (80/20) to simulate realistic forecasting conditions
 4. Train and compare two models:
    - Linear Regression (baseline)
